@@ -1,8 +1,9 @@
+%global dname Discord
+
 %global privlibs libffmpeg|libnode
 %global __requires_exclude ^(%{privlibs})\\.so
 %global __provides_exclude_from .*\\.so
 %global debug_package %{nil}
-%global dname Discord
 
 Name: discord
 Version: 0.0.2
