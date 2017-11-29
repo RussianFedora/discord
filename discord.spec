@@ -57,7 +57,8 @@ rm -f %{buildroot}/opt/%{name}/*.sh
 rm -f %{buildroot}/opt/%{name}/%{name}.desktop
 rm -f %{buildroot}/opt/%{name}/%{name}.png
 
-# Marking as executable...
+# Renaming and marking as executable...
+mv %{buildroot}/opt/%{name}/Discord %{buildroot}/opt/%{name}/%{name}
 chmod +x %{buildroot}/opt/%{name}/%{name}
 
 # Creating desktop icon...

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+GenericName=VoIP client
+GenericName[ru]=Клиент голосовой связи
+Name=Discord
+Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
+Comment[ru]=Бесплатный голосовой и текстовый чат для геймеров, надёжен и работает как на компьютере, так и на смартфоне.
+Exec=/opt/discord/discord %F
+Icon=discord
+Terminal=false
+Type=Application
+StartupWMClass=discord
+Categories=Network;InstantMessaging;
