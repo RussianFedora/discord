@@ -2,6 +2,7 @@
 %global __requires_exclude ^(%{privlibs})\\.so
 %global __provides_exclude_from .*\\.so
 %global debug_package %{nil}
+%global dname Discord
 
 Name: discord
 Version: 0.0.2
@@ -28,7 +29,7 @@ works on both your desktop and phone. Stop paying for TeamSpeak
 servers and hassling with Skype. Simplify your life.
 
 %prep
-%autosetup -n Discord
+%autosetup -n %{dname}
 
 %build
 # Do nothing...
@@ -43,13 +44,13 @@ mkdir -p %{buildroot}/opt/%{name}/
 touch %{buildroot}%{_bindir}/%{name}
 
 # Installing to working directory from official package...
-cp -r %_builddir/Discord/* %{buildroot}/opt/%{name}
+cp -r %_builddir/%{dname}/* %{buildroot}/opt/%{name}
 
 # Installing icons...
 for size in 16 32 48 64 128 256 512; do
     dir="%{buildroot}%{_datadir}/icons/hicolor/${size}x${size}/apps"
     mkdir -p $dir
-    convert -resize ${size}x${size} %_builddir/Discord/%{name}.png "$dir/%{name}.png"
+    convert -resize ${size}x${size} %_builddir/%{dname}/%{name}.png "$dir/%{name}.png"
 done
 
 # Removing some unused files...
@@ -58,7 +59,7 @@ rm -f %{buildroot}/opt/%{name}/%{name}.desktop
 rm -f %{buildroot}/opt/%{name}/%{name}.png
 
 # Renaming and marking as executable...
-mv %{buildroot}/opt/%{name}/Discord %{buildroot}/opt/%{name}/%{name}
+mv %{buildroot}/opt/%{name}/%{dname} %{buildroot}/opt/%{name}/%{name}
 chmod +x %{buildroot}/opt/%{name}/%{name}
 
 # Creating desktop icon...
