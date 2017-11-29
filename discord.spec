@@ -43,7 +43,7 @@ mkdir -p %{buildroot}/opt/%{name}/
 touch %{buildroot}%{_bindir}/%{name}
 
 # Installing to working directory from official package...
-cp -r %_builddir/Discord %{buildroot}/opt
+cp -r %_builddir/Discord/* %{buildroot}/opt/%{name}
 
 # Installing icons...
 for size in 16 32 48 64 128 256 512; do
