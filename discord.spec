@@ -7,7 +7,7 @@
 
 Name: discord
 Version: 0.0.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 Summary: Free voice and text chats for gamers
 URL: https://discordapp.com/
@@ -88,5 +88,8 @@ fi
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
+* Tue Dec 05 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0.0.2-2
+- Added missing libcxx dependency.
+
 * Wed Nov 29 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0.0.2-1
 - Initial SPEC release.
