@@ -23,6 +23,7 @@ BuildRequires: %{_bindir}/convert
 Requires(post): %{_sbindir}/update-alternatives
 Requires(postun): %{_sbindir}/update-alternatives
 Requires: hicolor-icon-theme
+Requires: libcxx%{?_isa}
 
 %description
 All-in-one voice and text chat for gamers that's free, secure, and
