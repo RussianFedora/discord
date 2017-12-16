@@ -6,8 +6,8 @@
 %global debug_package %{nil}
 
 Name: discord
-Version: 0.0.2
-Release: 2%{?dist}
+Version: 0.0.3
+Release: 1%{?dist}
 
 Summary: Free voice and text chats for gamers
 URL: https://discordapp.com/
@@ -88,6 +88,9 @@ fi
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
+* Sat Dec 16 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0.0.3-1
+- Updated to version 0.0.3.
+
 * Tue Dec 05 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0.0.2-2
 - Added missing libcxx dependency.
 
