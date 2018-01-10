@@ -6,7 +6,7 @@
 %global debug_package %{nil}
 
 Name: discord
-Version: 0.0.3
+Version: 0.0.4
 Release: 1%{?dist}
 
 Summary: Free voice and text chats for gamers
@@ -88,6 +88,9 @@ fi
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
+* Wed Jan 10 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.0.4-1
+- Updated to version 0.0.4.
+
 * Sat Dec 16 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0.0.3-1
 - Updated to version 0.0.3.
 
